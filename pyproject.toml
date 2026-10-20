@@ -9,7 +9,7 @@ description = "Deterministic webhook failure drills with independent side-effect
 requires-python = ">=3.10"
 license = {text = "MIT"}
 readme = "README.md"
-authors = [{name = "OMX Digital"}]
+authors = [{name = "Kamesh Jindal (OMX Digital)"}]
 dependencies = []
 
 [project.scripts]

@@ -168,3 +168,17 @@ Real webhook integrations must handle retries, duplicate deliveries and unordere
 Stripe describes these behaviors in its [official webhook documentation](https://docs.stripe.com/webhooks).
 This lab demonstrates the general failure patterns; it is not affiliated with Stripe and
 its fixtures are not Stripe-compatible payloads.
+
+## Use it as a Claude Code skill
+
+This repository is also a Claude Code skill (see [SKILL.md](SKILL.md)).
+
+```sh
+git clone https://github.com/OmxKamesh/webhook-tester ~/.claude/skills/webhook-tester
+```
+
+Then start Claude Code and run `/webhook-tester demo`. The skill is user-invoked only, so Claude will not run it on its own. It calls the same `python -m webhook_chaos_lab` CLI described above, with the same limits.
+
+---
+
+Built by Kamesh Jindal at [OMX Digital](https://omxdigital.ai). Part of the [OMX Claude Skills toolkit](https://github.com/OmxKamesh/claude-code-skills). Need this set up for your business? [kamesh@omxdigital.ai](mailto:kamesh@omxdigital.ai)
