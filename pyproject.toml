@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "webhook-chaos-lab"
+version = "0.1.0"
+description = "Deterministic webhook failure drills with independent side-effect assertions"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+readme = "README.md"
+authors = [{name = "OMX Digital"}]
+dependencies = []
+
+[project.scripts]
+webhook-chaos = "webhook_chaos_lab.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["webhook_chaos_lab*"]
